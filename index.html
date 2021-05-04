@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randomizer</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="result">
+            <h1>Случайное число</h1>
+            <div class="result_number">
+                <span id="output" class="output_number"></span>
+            </div>
+        </div>
+        <form action="" class="form">
+            <input 
+                type="number" 
+                min="1" 
+                max="9999999999" 
+                id="minValue" 
+                class="input" 
+                placeholder="Введите первое число" 
+                value="1" 
+                required
+            >
+            <input 
+                type="number" 
+                min="1" 
+                max="9999999999" 
+                id="maxValue" 
+                class="input" 
+                placeholder="Введите второе число" 
+                value="100" 
+                required
+            >
+            <label for="amount">Сколько случайных чисел нужно?</label>
+            <input 
+                type="number" 
+                min="1" 
+                max="10" 
+                id="amount" 
+                class="input" 
+                value="1" 
+                required
+            >
+            <button 
+                id="button" 
+                class="input button"
+                type="button" 
+                onclick="randomize()"
+            >
+                Сгенерировать
+            </button>
+        </form>
+    </div>
+    <script src="js/randomize.js"></script>
+    <script src="js/runOnPressEnter.js"></script>
+</body>
+</html>
