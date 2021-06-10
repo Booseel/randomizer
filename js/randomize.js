@@ -14,7 +14,7 @@ function randomize() {
       if ((max <= 9999999999 && min <= 9999999999) && amount <= 10) {
         for (let i = 0; i < amount; i++ ) {    
             let result = Math.floor(
-              Math.random() * (max - min) + min
+              Math.random() * (max - min + 1) + min
             );     
             outputString = outputString + result + ' '; 
         }  
