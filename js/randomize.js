@@ -9,7 +9,7 @@ function randomize() {
     let valuesError = 'Вы ввели слишком большие значения или количество случайных числел больше 10';
 
 
-    if (max && min && amount) {
+    if (max >= 0 && min >= 0 && amount) {
 
       if ((max <= 9999999999 && min <= 9999999999) && amount <= 10) {
         for (let i = 0; i < amount; i++ ) {    
