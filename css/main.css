@@ -24,6 +24,11 @@ body {
     text-align: center;
 }
 
+.result_number {
+    max-width: 80%;
+    margin: 0 10%;
+}
+
 .output_number {
     margin: 1rem 0;
     display: block;
